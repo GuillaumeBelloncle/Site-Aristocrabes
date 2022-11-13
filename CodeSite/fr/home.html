@@ -18,25 +18,40 @@
     <body>
 		<header>
 		<!-- en-tête de page -->
-        <p> En-tete <img src="../data/img/a.png"/>
+        <p>
 			<nav>
-    			<a href="../home.html">Aristocrabes</a>
-				<a href="../programme.html">Programme</a>
-				<a href="../bureau.html">Bureau</a>
-				<a href="../campagnes.html">Campagne</a>
-				<a href="../allos.html">Allos</a>
-				<!-- accses rapide -->
-				<a href="../en/home.html" title="version englaise">English version</a>
-				<a href="+" title="version englaise">English version</a>
+				<a href="/fr/home" class="active" id="titre">
+					<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+					<span>Aristocrabes</span>
+				</a>
+				<a href="../programme.html">
+					<span>Programme</span>
+				</a>
+				<a href="../menbre.html"><span>Membres</span></a>
+				<a href="../campagnes.html"><span>Campagnes</span></a>
+				<a href="../allos.html"><span>Allos</span></a>
+				<!--accses rapide-->
+				<a href="../en/home.html" class="quick-access" title="version englaise"><span>English version</span></a>
+				<a href="tel:+33783653406" class="quick-access" title="Appelez-nous !">
+					<div class="icon"><img src="../data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
+				</a>
 				
 			</nav>
-		</p>
+		<p/>
     </header>
 	<main>
-		<section>
-			<h1>Bienvenus</h1>
-			<p>Texte de bienvenus</p>
-		</section>
+		<div style="display:flex;flex-wrap: wrap;">
+			<!--mots de bienvenus-->
+			<div style="flex-basis: 300px;flex-grow: 1;margin-right: 2rem;">
+				<h1>Bienvenus</h1>
+				<p>Texte de bienvenus</p>
+			</div>
+			<!--vidéo de filme, a mettre sur youtube-->
+			<div style="display:grid;flex-basis:400px;flex-shrink:0;flex-grow:1;max-width:100%;margin-top:1rem;">
+				<svg viewBox="0 0 16 9" style="grid-area: 1/1/1/1;"></svg>
+				<iframe style="grid-area: 1/1/1/1;width: 100%;height: 100%;max-width:unset;max-height:470px;" class="carte" src="https://www.youtube.com/embed/FT2VKCnAJmg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</div>
 		  <!-- comentaire inutil -->
 		  <p>
 			Blablabla  <br />
@@ -49,7 +64,8 @@
 		</p>
 	</main>
 		<footer>
-		  <p>pied de page</p><!-- Placez ici le contenu du pied de page -->
+			
+		  <p>pied de page</p>
 		</footer>
     </body>
 </html>

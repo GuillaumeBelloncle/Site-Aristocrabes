@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*------------------------ 
+/*------------------------
   PIED DE PAGE
   ------------------*/
 
@@ -28,7 +28,7 @@ footer #piedDePage {
 }
 
 footer #footerlogo {
-	/*logo Cerflock*/
+	/*logo*/
 	height: 16rem;
 	padding: 0;
 	margin: 0;
@@ -65,17 +65,18 @@ footer #footertext div {
 	}
 }
 
-footer #footer2 h2 {
+footer #footer h2 {
 	white-space: nowrap;
 	margin-bottom: 1rem;
+	text-align: center;
 }
 
-footer #footer2 p {
+footer #footer p {
 	line-height: 2.3rem;
 }
 
-footer #footer2 button svg,
-footer #footer2 button img {
+footer #footer button svg,
+footer #footer button img {
 	overflow: visible;
 	/*images des réseaux sociaux*/
 	height: 1.5em;
@@ -84,7 +85,14 @@ footer #footer2 button img {
 	margin-right: 0.5em;
 }
 
-footer #footer2 button:hover {
+footer #footer button:hover {
 	filter: brightness(130%);
 	-webkit-filter: brightness(130%);
+}
+
+footer #rs {
+    display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 }

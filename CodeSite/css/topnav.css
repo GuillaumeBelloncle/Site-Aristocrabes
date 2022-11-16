@@ -138,26 +138,26 @@ nav a.quick-access div.icon svg {
 	-o-transition: transform .5s 0s;
 }
 
-nav a.quick-access:hover div.icon img,
+/*nav a.quick-access:hover div.icon img,
 nav a.quick-access:hover div.icon svg {
-	/*animation de rotation des boutons d'accès rapide*/
+	/*animation de rotation des boutons d'accès rapide*/ /*
 	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
-}
+}*/
 
 nav a:hover div.icon img,
 nav a:hover div.icon svg {
-	/*icôneséclairéesquandonpasselasouris*/
+	/*icône s éclairées quand on passe la souris*/
 	filter: brightness(1.2);
 	-webkit-filter: brightness(1.2);
 }
 
 .dark nav a:hover div.icon img,
 .dark nav a:hover div.icon svg {
-	/*icôneséclairéesquandonpasselasouris*/
+	/*icône s éclairées quand on passe la souris*/
 	filter: brightness(1.2) grayscale(0.2);
 	-webkit-filter: brightness(1.2) grayscale(0.2);
 }
@@ -186,7 +186,7 @@ nav details summary span {
 	color: var(--text-color-light);
 	text-decoration: none;
 	font-size: 1.3em;
-	font-family: 'Grenze', serif;
+	font-family: 'Kashina', serif;
 	font-display: fallback;
 	font-weight: 300;
 	margin: 0 0.7rem;
@@ -195,7 +195,7 @@ nav details summary span {
 }
 
 nav a#titre span {
-	font-family: 'Grenze Gotisch', 'Grenze', serif;
+	font-family: 'Kashina', serif;
 }
 
 nav a.active span {
@@ -253,7 +253,7 @@ nav a:hover span::after {
 		box-shadow: none;
 		overflow: hidden;
 		padding: 1rem;
-		background: var(--first-color);
+		/*background: var(--first-color);*/
 		transition: all 0.5s ease;
 		-webkit-transition: all 0.5s ease;
 		-moz-transition: all 0.5s ease;

@@ -31,6 +31,24 @@
 
 
 	/* les liens cliquables*/
+	nav a:hover {
+		/*mettre en surbrillance la case quand on passe la souris dessus*/
+		background-color: var(--first-color-lighter);
+		/*ajouter une ombre au passage de la souris sur l'accès rapide*/
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		text-decoration: none;
+	}
+
+	nav a.active {
+		/*mettre en avant la case de la page ouverte*/
+		background-color: var(--second-color);
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
+	}
+
+	nav a.active:hover {
+		/*quand on passe la souris sur la case de la page ouverte*/
+		background-color: var(--second-color-lighter);
+	}
 
 
 }
@@ -161,7 +179,7 @@ nav details p {
 	color: var(--text-color-light);
 	text-decoration: none;
 	font-size: 1.3em;
-	font-family: 'Grenze', serif;
+	font-family: 'Kashina', serif;
 	font-display: fallback;
 	font-weight: 300;
 	margin: 0 0.7rem;
@@ -170,7 +188,7 @@ nav details p {
 }
 
 nav a#titre span {
-	font-family: 'Grenze Gotisch', 'Grenze', serif;
+	font-family: 'Kashina', serif;
 }
 
 nav a.active span {
@@ -253,7 +271,7 @@ nav a:hover span::after {
 		color: var(--text-color-light);
 		text-decoration: none;
 		font-size: 1.3em;
-		font-family: 'Grenze', serif;
+		font-family: 'Kashina', serif;
 		font-display: fallback;
 		font-weight: 300;
 		margin: 0 0.7rem;
@@ -267,12 +285,17 @@ nav a:hover span::after {
 		padding: 20;
 	}
 
+	nav details a span{
+		text-align: middle;
+		/*padding: 20;*/
+	}
+
 	.boxnav {
 		display: flex;
 		float: none;
 		box-shadow: none;
 		overflow: hidden;
-		padding: 1rem;
+		/*padding: 1rem;*/
 		background: var(--first-color);
 		transition: all 0.5s ease;
 		-webkit-transition: all 0.5s ease;
@@ -323,24 +346,6 @@ nav a:hover span::after {
 		float: right;
 	}
 
-	nav a:hover {
-		/*mettre en surbrillance la case quand on passe la souris dessus*/
-		background-color: var(--first-color-lighter);
-		/*ajouter une ombre au passage de la souris sur l'accès rapide*/
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-		text-decoration: none;
-	}
-
-	nav a.active {
-		/*mettre en avant la case de la page ouverte*/
-		background-color: var(--second-color);
-		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
-	}
-
-	nav a.active:hover {
-		/*quand on passe la souris sur la case de la page ouverte*/
-		background-color: var(--second-color-lighter);
-	}
 
 	nav a {
 		display: flex;
@@ -355,7 +360,7 @@ nav a:hover span::after {
 		display: none;
 	}
 	/*logo cerflock plus gros*/
-	nav a#titre div.icon img {
+/*	nav a#titre div.icon img {
 		height: 5rem;
 		transform: translate(0.1rem, -1.2rem);
 		-webkit-transform: translate(0.1rem, -1.2rem);
@@ -363,4 +368,4 @@ nav a:hover span::after {
 		-ms-transform: translate(0.1rem, -1.2rem);
 		-o-transform: translate(0.1rem, -1.2rem);
 	}
-}
+}*/

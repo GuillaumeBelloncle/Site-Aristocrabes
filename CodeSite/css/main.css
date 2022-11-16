@@ -12,6 +12,7 @@ html {
 	height: 100%;
 }*/
 
+
 body {
 	/*Aspect général de la page*/
 	background: url('/data/bg-light.png');
@@ -19,10 +20,10 @@ body {
 	background-repeat: repeat;
 	background-attachment: fixed;
 	color: var(--text-color);
-	font-family: 'Merriweather', serif;
+	font-family: 'Elegant Sans Regular', serif;
 	/*Aspect technique*/
 	margin: 0px;
-	min-height: 100vh;
+	min-height: 200vh;
 	padding: 0;
 }
 
@@ -44,7 +45,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: 'grenze', serif;
+	font-family: 'Kashina', serif;
 	line-height: 1em;
 	margin: 0;
 	margin-top: 0.2em;
@@ -53,7 +54,7 @@ h4 {
 
 h1 {
 	/*titres de niveau 1*/
-	font-family: 'Grenze Gotisch', 'Grenze', serif;
+	font-family: 'Kashina', serif;
 	font-size: 4rem;
 }
 
@@ -128,7 +129,7 @@ button {
 	align-items: center;
 	display: inline-flex;
 	height: 2rem;
-	font-family: 'Merriweather', serif;
+	font-family: 'Elegant Sans Bold Italic', serif;
 	transition: transform 0.5s;
 	backface-visibility: hidden;
 	-webkit-transition: transform 0.5s;
@@ -160,7 +161,7 @@ button {
 }
 
 .titlefont {
-	font-family: 'Grenze Gotisch', 'Grenze', serif;
+	font-family: 'Kashina', serif;
 }
 
 @media (hover:hover) {

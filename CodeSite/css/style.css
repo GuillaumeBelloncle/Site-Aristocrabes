@@ -24,21 +24,15 @@
 
 html {
 	/*couleurs claires*/
-	/*#9AC8EB
-	#5784BA
-	#B6D8F2
-	#2CCED2
-	#76CDCD
-	#212E53*/
-	--bg-color: #B6D8F2;
+	--bg-color: #9FB6DF; /*Bleu/violet*/
 	--gray: #CECECE;
-	--first-color: #212E53;
-	--first-color-lighter: #5784BA;
-	--first-color-to-text: #872d0c;
+	--first-color: #CD362D; /*Rouge*/
+	--first-color-lighter: #E53B32; /*Rouge Clair*/
+	--first-color-to-text: #7F0000; /*872d0c;couleur lien*/
 	/*#6b2309;*/
-	--second-color: #4A919E;
-	--second-color-lighter: #08C5D1;
-	--third-color: #76CDCD;
+	--second-color: #A7001E; /*Rouge sombre*/
+	--second-color-lighter: #CC0025; /*Rouge secondaire*/
+	--third-color: #CD362D;
 	--text-color: #000000; /*blanc*/
 	--text-color-opposite: #f2f2f2;
 	--text-color-light: #f2f2f2;

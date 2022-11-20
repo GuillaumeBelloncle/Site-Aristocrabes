@@ -15,15 +15,16 @@ html {
 
 body {
 	/*Aspect général de la page*/
-	background: url('/data/bg-light.png');
+	background: url('../data/bg-light.png');
 	background-color: var(--bg-color);
-	background-repeat: repeat;
-	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
 	color: var(--text-color);
 	font-family: 'Elegant Sans Regular', serif;
 	/*Aspect technique*/
 	margin: 0px;
-	min-height: 200vh;
+	min-height: 150vh;
 	padding: 0;
 }
 
@@ -118,7 +119,7 @@ i {
 
 button {
 	padding: 0.5rem;
-	margin: 0;
+	margin: 5px;
 	border: none;
 	border-radius: 0.3em;
 	box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);

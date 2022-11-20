@@ -128,15 +128,15 @@ nav a.quick-access div.icon svg {
 	-o-transition: transform .5s 0s;
 }
 
-nav a.quick-access:hover div.icon img,
+/*nav a.quick-access:hover div.icon img,
 nav a.quick-access:hover div.icon svg {
 	/*animation de rotation des boutons d'accès rapide*/
-	transform: rotate(180deg);
+/*	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
-}
+}*/
 
 nav a:hover div.icon img,
 nav a:hover div.icon svg {

@@ -81,7 +81,7 @@ nav details summary div.icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1rem;
+	font-size: 0.75rem;
 }
 
 nav a div.icon .svg.page {
@@ -250,7 +250,7 @@ nav a:hover span::after {
 		/*marges et taille de la boîte*/
 		padding: 0.3em;
 		height: 2.8rem;
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 	nav details a.mobile {
 		/*liens généraux*/
@@ -260,7 +260,7 @@ nav a:hover span::after {
 		/*marges et taille de la boîte*/
 		padding: 0.3em;
 		height: 2.8rem;
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 
 	nav a span,
@@ -337,7 +337,7 @@ nav a:hover span::after {
 		/*marges et taille de la boîte*/
 		padding: 0.3em;
 		height: 2.8rem;
-		font-size: 1em;
+		font-size: 0.75em;
 	}
 
 	nav a.quick-access {

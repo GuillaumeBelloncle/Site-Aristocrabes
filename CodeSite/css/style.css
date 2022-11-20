@@ -1,6 +1,7 @@
 @import url("topnavV2.css");
 @import url("main.css");
 @import url("footer.css");
+@import url("cartes.css");
 /* -------------
    LES COULEURS :
  ----------------*/
@@ -37,8 +38,8 @@ html {
 	--text-color-opposite: #f2f2f2;
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #101010;
-	--box-color: #d6b98d;
-	--box-color-lighter: #ddbf94;
+	/*--box-color: #9FB6DF;*/
+	--box-color-lighter: #9FB6DF;
 }
 
 html.dark {

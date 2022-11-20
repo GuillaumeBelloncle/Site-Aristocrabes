@@ -22,6 +22,7 @@ body {
 	/*background-attachment: fixed;*/
 	color: var(--text-color);
 	font-family: 'Elegant Sans Regular', serif;
+	font-size: 26px;
 	/*Aspect technique*/
 	margin: 0px;
 	min-height: 150vh;

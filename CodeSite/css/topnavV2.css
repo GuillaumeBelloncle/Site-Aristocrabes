@@ -90,7 +90,7 @@ nav a div.icon .svg.page {
 
 nav a.quick-access div.icon {
 	/*case moins large pour l'accès rapide*/
-	width: 1.9rem;
+	width: 1.6rem;
 }
 
 nav a.active div.icon .svg.page {
@@ -178,7 +178,7 @@ nav details p {
 	/*mise en forme du texte*/
 	color: var(--text-color-light);
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 0.9em;
 	font-family: 'Kashina', serif;
 	font-display: fallback;
 	font-weight: 300;
@@ -270,7 +270,7 @@ nav a:hover span::after {
 		/*mise en forme du texte*/
 		color: var(--text-color-light);
 		text-decoration: none;
-		font-size: 1.3em;
+		font-size: 1.1em;
 		font-family: 'Kashina', serif;
 		font-display: fallback;
 		font-weight: 300;

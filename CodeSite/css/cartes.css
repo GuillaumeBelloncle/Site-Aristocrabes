@@ -5,16 +5,46 @@ Code CSS pour la page des membres
 .jeu {
 	/*organisation de la page*/
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-gap: 2rem;
-	grid-auto-flow: dense;
+
 }
+@media screen and (min-width: 1500px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.jeu {
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
 
 .carte,
 a.carte {
 	/*bloccarte(contientphoto+texte)*/
-	border: solid;
-	border-width: 1px;
+	/*border: solid;
+	border-width: 1px;*/
 	border-radius: 10px;
 	border-color: var(--text-color-dark);
 	text-align: center;
@@ -48,8 +78,33 @@ img.carte {
 	overflow: hidden;
 }
 
+.carte .esperluette{
+	width: 10em;
+	object-fit: cover;
+}
+
+.angle{
+	margin-left: 0.5em;
+	width: 3em;
+	float: left;
+}
+
+.angle180{
+	width: 3em;
+	float: right;
+	margin: 0em 0.5em 0.5em 0em;
+}
+
+.carte p
+{
+    align:justify;
+		margin: 0em 0.5em 0em 0.5em;
+		font-size:0.9em;
+}
+
 .carte img {
-	/*l'imageenelle-même*/
+	/*l'image en elle-même*/
+	border-radius: 50%;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -60,11 +115,11 @@ img.carte {
 	-o-transition: all 0.5s ease;
 }
 
-.carte .texte {
+/*.carte .texte {
 	/*boîte contenant le texte*/
-	margin: 1rem;
+/*	margin: 1rem;
 	margin-top: 0.5rem;
-}
+}*/
 
 @media (hover: hover) {
 	.carte:hover {

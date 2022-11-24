@@ -22,8 +22,8 @@ def lecture_donne(Doc): #Lecture donner tab
     return tab
 
 def trombifr(tab):
-    print("				<div class=&carte wohover&>")
-    print("					<div class=&image&>")
+    print("				<div class=&carte&>")
+    print("					<div class=&image menbre&>")
     print("						<img src=&..\data\photos\membres\R-",tab[i][0],".png& alt=&",tab[i][0],"&>")
     print("					</div>")
     print("					<div class=&texte&>")
@@ -36,8 +36,8 @@ def trombifr(tab):
     print("				</div>")
 
 def trombien(tab):
-    print("				<div class=&carte wohover&>")
-    print("					<div class=&image&>")
+    print("				<div class=&carte&>")
+    print("					<div class=&image menbre&>")
     print("						<img src=&..\data\photos\membres\R-",tab[i][0],".png& alt=&",tab[i][0],"&>")
     print("					</div>")
     print("					<div class=&texte&>")
@@ -49,7 +49,7 @@ def trombien(tab):
     print("					</div>")
     print("				</div>")
 
-    
+
 tab=lecture_donne("trombi.csv")
 for i in range(1,len(tab)):
     trombifr(tab);

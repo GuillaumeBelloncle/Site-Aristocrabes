@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+        <title>Allôs</title>
+
+		<link rel="shortcut icon" href="../data/favicons/favicon_16.ico" type="image/x-icon" />
+		<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
+		<link rel="icon" href="/data/favicons/favicon_48.png" sizes="48x48" />
+		<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
+		<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
+    </head>
+
+    <body>
+		<header>
+		<!-- en-tête de page
+			class="active" pour metre en surbrillance pour indique dans quel menus on est
+			class="quick-access" pour mettre à droit du menus
+			liée au css topnav
+		-->
+
+			<nav>
+					<!--Version portable-->
+				<details class="boxnav" >
+					<summary>
+						<div class="icon"><img src="../data/icons/menu.svg" class="svg" class="svg" alt="Menu"></div>
+						<div class="iconmenu"><img src="../data/logo_rond.png" alt="" id="titre" ></div>
+						<span>Les Aristocrabes</span>
+					</summary>
+					<p> <br> </p>
+					<a href="home.html" class="mobile">
+						<span>Home</span>
+					</a>
+					<a href="programme.html" class="mobile">
+						<span>Program</span>
+					</a>
+					<a href="menbre.html" class="mobile">
+						<span>Members</span>
+					</a>
+					<a href="campagnes.html" class="mobile">
+						<span>Campaigns</span>
+					</a>
+					<a href="allos.html" class="mobile active">
+						<span>Allos</span>
+					</a>
+					<a href="rplace.html" class="mobile">
+						<span>r/ place</span>
+					</a><br>
+
+				</details>
+
+					<!--Version ordi-->
+				<a href="home.html" id="titre">
+					<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+					<span>Les Aristocrabes</span>
+				</a>
+				<a href="programme.html">
+					<span>Program</span>
+				</a>
+				<a href="menbre.html"><span>Members</span></a>
+				<a href="campagnes.html"><span>Campaigns</span></a>
+				<a href="allos.html" class="active" ><span>Allos</span></a>
+				<a href="rplace.html"><span>r/ place</span></a>
+
+					<!--accses rapide-->
+
+				<a href="../en/allos.html" class="quick-access"  title="version englaise"><span>English version</span></a>
+				<a href="tel:+33620939644" class="quick-access" title="Appelez-nous !"> <!--A trouver pour l'integre differement-->
+
+					<div class="icon"><img src="../data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
+				</a>
+			</nav>
+		</header>
+		<style>
+			a.gros-bouton {
+				float:right;
+				margin-top:1.5rem;
+			}
+			button.gros-bouton {
+				font-size:1.5rem;
+				height:2em;
+				padding:0.5em;
+				margin:auto 0;
+			}
+			@media screen and (max-width: 500px) {
+				button.gros-bouton {
+					font-size: 1.1rem;
+				}
+			}
+		</style>
+		<main>
+			<div style="display:flow-root;">
+				<h1 style="float:left;">Allô !</h1>
+				<a class="hidden gros-bouton" href="tel:+33620939644">
+					<button class="gros-bouton">Appelle-nous !</button>
+				</a>
+			</div>
+			<p>A votre service pour vous proposer votre meilleur semaine de l'année ! </p>
+			<div class="jeu">
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos2.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos3.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos4.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos5.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos6.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos7.png" alt="Image du Allô">
+					</div>
+				</div>
+				<div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos.png" alt="Image du Allô">
+					</div>
+				</div>
+			</div>
+
+
+		</main>
+		<footer>
+			<div id="piedDePage">
+				<img id="footerlogo" src="../data/logo_rond.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
+				<div id="footertext">
+					<div id="footer">
+						<h2 class="titlefont">Aristocrabes</h2>
+						<p>©Les Ratbattes 2022 <br/>
+						<a href="legal.html">Legal mentions</a></p>
+						<!--<p><i>Texte </i></p>-->
+					</div>
+					<div id="footer">
+					  <h2>Social Network</h2>
+						<br>
+						<!--probleme de casse coller-->
+					  <div id="rs">
+							<p><a href="https://www.facebook.com/**" target="_blank" class="hidden" title="Facebook">
+								<button style="--first-color:#1877f2;border:20px;">
+									<img src="../data/rs/facebook.svg" class="svg" />
+									Facebook
+								</button>
+							</a><p/>
+							<p><a href="https://www.youtube.com/channel/" target="_blank" class="hidden" title="Youtube">
+								<button style="--first-color: #e20d0d;border:20px;">
+									<img src="../data/rs/youtube.svg" class="svg" />
+									Youtube
+								</button>
+							</a><p/>
+							<p><a href="https://www.instagram.com//" target="_blank" class="hidden" title="instagram">
+								<button style="--first-color:#ef0075;border:20px;">
+									<img src="../data/rs/instagram.svg" class="svg" />
+									Instagram
+								</button>
+							</a><p/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

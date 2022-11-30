@@ -24,7 +24,7 @@ def lecture_donne(Doc): #Lecture donner tab
 def trombifr(tab):
     print("				<div class=&carte&>")
     print("					<div class=&image menbre&>")
-    print("						<img src=&..\data\photos\membres\R-",tab[i][0],".png& alt=&",tab[i][0],"&>")
+    print("						<img src=&..\data\photos\membres\R-",tab[i][7],".jpg& alt=&",tab[i][0],"&>")
     print("					</div>")
     print("					<div class=&texte&>")
     print("						<br>")
@@ -38,7 +38,7 @@ def trombifr(tab):
 def trombien(tab):
     print("				<div class=&carte&>")
     print("					<div class=&image photoMenbre&>")
-    print("						<img src=&..\data\photos\membres\R-",tab[i][0],".png& alt=&",tab[i][0],"&>")
+    print("						<img src=&..\data\photos\membres\R-",tab[i][7],".jpg& alt=&",tab[i][0],"&>")
     print("					</div>")
     print("					<div class=&texte&>")
     print("						<br>")

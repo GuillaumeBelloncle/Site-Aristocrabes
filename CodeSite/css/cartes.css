@@ -19,6 +19,14 @@ Code CSS pour la page des membres
 	display: grid;
 
 }
+
+.cal {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+	grid-gap: 2rem;
+		grid-auto-flow: dense;
+}
+
 @media screen and (min-width: 1500px) {
 	.jeu {
 		grid-template-columns: 1fr 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
@@ -26,6 +34,8 @@ Code CSS pour la page des membres
 		grid-auto-flow: dense;
 	}
 }
+
+
 
 @media screen and (max-width: 1500px) {
 	.jeu {
@@ -92,6 +102,7 @@ img.carte {
 .carte .esperluette{
 	width: 10em;
 	object-fit: cover;
+	margin: auto;
 }
 
 .carte p

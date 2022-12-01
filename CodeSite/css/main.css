@@ -51,48 +51,57 @@ h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 0.4em;
 }
 
-h1 {
-	/*titres de niveau 1*/
-	font-family: 'Kashina', serif;
-	font-size: 3.5rem;
-}
+/*@media screen and (min-width:800px) {*/
+	h1 {
+		/*titres de niveau 1*/
+		font-size: 3.5rem;
+	}
 
-h2 {
-	/*titres de niveau 2*/
-	font-size: 2.3rem;
-}
+	h2 {
+		/*titres de niveau 2*/
+		font-size: 2.3rem;
+	}
 
-h3 {
-	/*titres de niveau 3*/
-	font-size: 1.5rem;
-}
+	h3 {
+		/*titres de niveau 3*/
+		font-size: 1.5rem;
+	}
 
-h4 {
-	/*titres de niveau 4*/
-	font-size: 1.2rem;
-}
+	h4 {
+		/*titres de niveau 4*/
+		font-size: 1.2rem;
+	}
 
-h5 {
-	/*titres de niveau 5*/
-	font-size: 0.9rem;
-}
+	h5 {
+		/*titres de niveau 5*/
+		font-size: 0.9rem;
+	}
 
-h6 {
-	/*titres de niveau 6*/
-	font-size: 0.7rem;
-}
+	h6 {
+		/*titres de niveau 6*/
+		font-size: 0.7rem;
+	}
+/*}*/
 
-
-@media screen and (max-width:500px) {
+/*@media screen and (max-width:800px) {
 	/*on réduit les marges quand l'écran est tout petit*/
-	main {
+	/*main {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	h1 {
-		font-size: 3.5rem;
+	h1 {font-size: 2.5rem;	}
+
+	h2 {font-size: 1.9rem;	}
+	h3 {font-size: 1.4rem;	}
+	h4 {font-size: 1.1rem;	}
+	h5 {font-size: 0.9rem;	}
+	h6 {
+		font-size: 0.7rem;
 	}
-}
+	body {
+		font-size: 6px;
+	}
+}*/
 
 ul {
 	list-style-type: square;

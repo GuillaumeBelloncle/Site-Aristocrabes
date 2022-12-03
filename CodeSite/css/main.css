@@ -188,3 +188,12 @@ details summary::-webkit-details-marker {
 details summary:focus {
 	outline: none;
 }
+
+.icons img{
+	/*overflow: visible;*/
+	/*images des réseaux sociaux*/
+	height: 5px;
+	width: 5px;
+	/*translate: 0 0.4em;*/
+	/*margin-right: 0.5em;*/
+}

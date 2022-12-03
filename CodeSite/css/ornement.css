@@ -28,3 +28,11 @@
 	float: right;
 	margin: 0em -0.5em -0.5em 0.5em;
 }
+
+.carte .icons{
+	/*overflow: visible;*/
+	/*images des réseaux sociaux*/
+	width: 0.7em;
+	/*translate: 0 0.4em;*/
+	/*margin-right: 0.5em;*/
+}

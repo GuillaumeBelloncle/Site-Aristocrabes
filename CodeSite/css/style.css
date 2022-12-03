@@ -2,7 +2,8 @@
 @import url("main.css");
 @import url("footer.css");
 @import url("cartes.css");
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&family=Grenze:wght@300;600&family=Merriweather:wght@400;700&display=swap');
+@import url("ornement.css");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 /* -------------
    LES COULEURS :
  ----------------*/
@@ -34,11 +35,11 @@ html {
 	--second-color: #A7001E; /*Rouge sombre*/
 	--second-color-lighter: #CC0025; /*Rouge secondaire*/
 	--third-color: #CD362D;
-	--text-color: #000000; /*blanc*/
+	--text-color: #000000; /*Noir*/
 	--text-color-opposite: #f2f2f2;
 	--text-color-light: #f2f2f2;
 	--text-color-dark: #101010;
-	--box-color: rgb(255,255,255,0.4); /*#9FB6DF;*/
+	--box-color: rgb(255,255,255,0.5); /*#9FB6DF;*/
 	--box-color-lighter: #9FB6DF;
 }
 
@@ -81,17 +82,21 @@ html.dark {
 	-o-transition: all 0.5s ease;
 }
 
-@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+@font-face {
     font-family: 'Elegant Sans Regular';
     src: url('Elegant Sans Regular.ttf') format('truetype'),
 }
 
-@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+@font-face {
     font-family: 'Elegant Sans Semibold';
     src: url('Elegant Sans Semibold.ttf') format('truetype'),
 }
 
-@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+@font-face {
     font-family: 'Kashina';
     src: url('Kashina.ttf') format('truetype'),
+}
+
+@font-face {
+	font-family: 'Dancing Script', cursive;
 }

@@ -1,0 +1,30 @@
+
+.carte .esperluette{
+	width: 10em;
+	object-fit: cover;
+	margin: auto;
+}
+
+.carte .angle{
+	margin: 0.35em -10em 0em 0.35em;
+	width: 5em;
+	float: left;
+}
+
+.carte .angle180{
+	width: 5em;
+	float: right;
+	margin: -1.5em 0.35em 0.35em 0em;
+}
+
+.anglePetit{
+	margin: -0.5em -2em 0em -0.5em;
+	width: 1em;
+	float: left;
+}
+
+.anglePetit180{
+	width: 1em;
+	float: right;
+	margin: 0em -0.5em -0.5em 0.5em;
+}

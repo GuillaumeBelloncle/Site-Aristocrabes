@@ -17,16 +17,16 @@
 	margin: -1.5em 0.35em 0.35em 0em;
 }
 
-.anglePetit{
-	margin: -0.5em -2em 0em -0.5em;
+.carte .anglePetit{
+	margin: 0.25em;
 	width: 1em;
 	float: left;
 }
 
-.anglePetit180{
+.carte .anglePetit180{
 	width: 1em;
 	float: right;
-	margin: 0em -0.5em -0.5em 0.5em;
+	margin: -0.15em 0.25em 0.25em -0.25em;
 }
 
 .carte .icons{

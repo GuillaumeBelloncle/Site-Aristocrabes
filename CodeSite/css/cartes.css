@@ -145,14 +145,29 @@ img.carte {
 		background: rgba(255, 255, 255, 0.7); /*var(--box-color-lighter);*/
 		box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 	}
-	.carte:not(.menbre):hover/* img*/ {
+
+	.carte:hover img {
 		/*quand on passe la souris sur l'image*/
-		transform: scale(1.05);
-		-webkit-transform: scale(1.05);
-		-moz-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		-o-transform: scale(1.05);
-		filter: brightness(1.1);
-		-webkit-filter: brightness(1.1);
+		transform: scale(1.01);
+		-webkit-transform: scale(1.01);
+		-moz-transform: scale(1.01);
+		-ms-transform: scale(1.01);
+		-o-transform: scale(1.01);
+	}
+	.carte:hover .esperluette {
+		/*quand on passe la souris sur l'image*/
+		transform: scale(1.3);
+		-webkit-transform: scale(1.3);
+		-moz-transform: scale(1.3);
+		-ms-transform: scale(1.3);
+		-o-transform: scale(1.3);
+	}
+	.carte:hover .angle180,.carte:hover .angle {
+		/*quand on passe la souris sur l'image*/
+		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
 	}
 }

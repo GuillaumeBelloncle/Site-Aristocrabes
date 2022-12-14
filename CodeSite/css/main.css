@@ -13,7 +13,7 @@ html {
 }*/
 
 
-body {
+body:not(.nonindex) {
 	/*Aspect général de la page*/
 	background: url('../data/bg-light.png');
 	background-color: var(--bg-color);
@@ -29,6 +29,21 @@ body {
 	padding: 0;
 }
 
+body.nonindex {
+	/*Aspect général de la page*/
+	background: url('../data/bg-light.png');
+	background-color: var(--bg-color);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	/*background-attachment: fixed;*/
+	color: var(--text-color);
+	font-family: /*'Elegant Sans Regular'*/, serif;
+	font-size: 1em;/*26px;
+	/*Aspect technique*/
+	margin: 0px;
+	padding: 0;
+}
+
 .dark body {
 	background: url('/data/bg-dark.png');
 	background-color: var(--bg-color);
@@ -36,6 +51,10 @@ body {
 	background-attachment: fixed;
 }
 
+
+.smob{
+	display: none;
+}
 
 main {
 	/*contenu de la page (hors en-tête, pied de page, etc...)*/
@@ -105,7 +124,7 @@ a {
 	a {
 		text-decoration: none;
 	}
-	a:hover {
+	a:hover:not(.sa) {
 		/*liens hypertextes quand on passe la souris dessus*/
 		text-decoration: underline;
 	}

@@ -4,7 +4,7 @@ Code CSS pour la page des membres
 
 
 
-.jeu {
+.jeu, .jeu3 {
 	/*organisation de la page*/
 	display: grid;
 
@@ -37,6 +37,14 @@ Code CSS pour la page des membres
 	}
 }
 
+@media screen and (min-width: 900px) {
+	.jeu3 {
+		grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
 @media screen and (max-width: 1300px) {
 	.jeu {
 		grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
@@ -46,7 +54,7 @@ Code CSS pour la page des membres
 }
 
 @media screen and (max-width: 900px) and (min-width: 550px) {
-	.jeu {
+	.jeu,.jeu3 {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 2rem;
 		grid-auto-flow: dense;
@@ -54,12 +62,20 @@ Code CSS pour la page des membres
 }
 
 @media screen and (max-width: 550px) {
-	.jeu {
+	.jeu,.jeu3 {
 		grid-template-columns: 1fr;
 		grid-gap: 2rem;
 		grid-auto-flow: dense;
 	}
 }
+
+
+.jeuC {
+	grid-template-columns: 1fr;
+	grid-gap: 2rem;
+	grid-auto-flow: dense;
+}
+
 
 .carte,
 a.carte {
@@ -83,38 +99,65 @@ a.carte {
 	-o-transition: all 0.5s ease;
 }
 
+.carteC {
+	/*bloccarte(contientphoto+texte)*/
+	/*border: solid;
+	border-width: 1px;*/
+	border-radius: 10px;
+	/*border-color: var(--text-color-dark);*/
+	text-align: center;
+	align-items: center;
+	background: var(--box-color);
+	/*box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);*/
+	overflow: hidden;
+	transition: all 0.5s ease;
+	color: var(--text-color);
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
 .jeu .carte-haute {
 	grid-row-end: span 2;
 }
 
-img.carte {
+not(.jeu3) img.carte,not(.jeu3) img.carteC {
 	height: 100%;
 	object-fit: cover;
 	overflow: hidden;
 }
 
-.carte .texte {
-	/*background: rgba(255, 255, 255, 0.35);*/
-	/*display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 450px;*/
+.jeu3 img.carte {
+	height: 10%;
+	object-fit: cover;
+	overflow: hidden;
 }
 
-.carte .image {
+.carte .image,.carteC .image {
 	/*boîte contenant l'image*/
 	width: 100%;
 	overflow: hidden;
 }
 
-.carte p
+.jeu3 .carte .image {
+	/*boîte contenant l'image*/
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carte p,.carteC p
 {
     align:justify;
 		margin: 0em 0.5em 0em 0.5em;
 		font-size:0.9em;
 }
 
-.carte img {
+.carte img,.carteC img {
 	/*l'image en elle-même*/
 	width: 100%;
 	height: 100%;
@@ -140,13 +183,13 @@ img.carte {
 }*/
 
 @media (hover: hover) {
-	.carte:hover {
+	.carte:hover,	.carteC:hover {
 		/*bloc carte quand on passe la souris*/
 		background: rgba(255, 255, 255, 0.7); /*var(--box-color-lighter);*/
 		box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 	}
 
-	.carte:hover img {
+	.carte:hover img,.carteC:hover img {
 		/*quand on passe la souris sur l'image*/
 		transform: scale(1.01);
 		-webkit-transform: scale(1.01);
@@ -154,7 +197,7 @@ img.carte {
 		-ms-transform: scale(1.01);
 		-o-transform: scale(1.01);
 	}
-	.carte:hover .esperluette {
+	.carte:hover .esperluette,	.carteC:hover .esperluette {
 		/*quand on passe la souris sur l'image*/
 		transform: scale(1.3);
 		-webkit-transform: scale(1.3);
@@ -162,7 +205,7 @@ img.carte {
 		-ms-transform: scale(1.3);
 		-o-transform: scale(1.3);
 	}
-	.carte:hover .angle180,.carte:hover .angle {
+	.carte:hover .angle180,.carte:hover .angle,.carteC:hover .angle {
 		/*quand on passe la souris sur l'image*/
 		transform: scale(1.1);
 		-webkit-transform: scale(1.1);

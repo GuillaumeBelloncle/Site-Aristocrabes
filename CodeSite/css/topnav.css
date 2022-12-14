@@ -53,13 +53,6 @@
 
 }
 @media screen and (max-width:450px) {
-	/*si l'écran n'est pas assez large pour afficher le titre
-	nav a.active {
-		display: none;
-	}
-	nav a#titre {
-		display: flex;
-	}*/
 	nav details summary span {
 		display: none;
 	}
@@ -127,16 +120,6 @@ nav a.quick-access div.icon svg {
 	-ms-transition: transform .5s 0s;
 	-o-transition: transform .5s 0s;
 }
-
-/*nav a.quick-access:hover div.icon img,
-nav a.quick-access:hover div.icon svg {
-	/*animation de rotation des boutons d'accès rapide*/
-/*	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-}*/
 
 nav a:hover div.icon img,
 nav a:hover div.icon svg {
@@ -346,6 +329,16 @@ nav a:hover span::after {
 		float: right;
 	}
 
+	nav a.cent {
+		/*on affiche les accès rapides à droite*/
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:400px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+	}
 
 	nav a {
 		display: flex;
@@ -359,13 +352,3 @@ nav a:hover span::after {
 	nav a:not(.quick-access):not(#titre) div.icon {
 		display: none;
 	}
-	/*logo cerflock plus gros*/
-/*	nav a#titre div.icon img {
-		height: 5rem;
-		transform: translate(0.1rem, -1.2rem);
-		-webkit-transform: translate(0.1rem, -1.2rem);
-		-moz-transform: translate(0.1rem, -1.2rem);
-		-ms-transform: translate(0.1rem, -1.2rem);
-		-o-transform: translate(0.1rem, -1.2rem);
-	}
-}*/

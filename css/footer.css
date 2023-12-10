@@ -13,6 +13,7 @@ footer {
 }
 
 @media screen and (max-width:500px) {
+
 	/*on réduit les marges quand l'écran est tout petit*/
 	footer {
 		padding-left: 20px;
@@ -49,10 +50,12 @@ footer #footertext div {
 	footer #piedDePage {
 		align-items: start;
 	}
+
 	footer #footerlogo {
 		height: 9rem;
 		float: right;
 	}
+
 	footer #footertext {
 		display: block;
 		float: left;
@@ -91,8 +94,8 @@ footer #footer button:hover {
 }
 
 footer #rs {
-    display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }

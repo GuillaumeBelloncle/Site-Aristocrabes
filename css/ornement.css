@@ -1,35 +1,40 @@
-
-.carte .esperluette,.carteC .esperluette{
+.carte .esperluette,
+.carteC .esperluette {
 	width: 10em;
 	object-fit: cover;
 	margin: auto;
 }
 
-.carte .angle,.carteC .angle{
+.carte .angle,
+.carteC .angle {
 	margin: 0.35em -10em 0em 0.35em;
 	width: 5em;
 	float: left;
 }
 
-.carte .angle180,.carteC .angle180{
+.carte .angle180,
+.carteC .angle180 {
 	width: 5em;
 	float: right;
 	margin: -1.5em 0.35em 0.35em 0em;
 }
 
-.carte .anglePetit,.carteC .anglePetit{
+.carte .anglePetit,
+.carteC .anglePetit {
 	margin: 0.25em;
 	width: 1em;
 	float: left;
 }
 
-.carte .anglePetit180,.carteC .anglePetit180{
+.carte .anglePetit180,
+.carteC .anglePetit180 {
 	width: 1em;
 	float: right;
 	margin: -0.15em 0.25em 0.25em -0.25em;
 }
 
-.carte .icons,.carteC .icons{
+.carte .icons,
+.carteC .icons {
 	/*overflow: visible;*/
 	/*images des réseaux sociaux*/
 	width: 0.7em;

@@ -21,8 +21,11 @@ body:not(.nonindex) {
 	background-size: 100%;
 	/*background-attachment: fixed;*/
 	color: var(--text-color);
-	font-family: /*'Elegant Sans Regular'*/, serif;
-	font-size: 1em;/*26px;
+	font-family:
+		/*'Elegant Sans Regular'*/
+		, serif;
+	font-size: 1em;
+	/*26px;
 	/*Aspect technique*/
 	margin: 0px;
 	min-height: 150vh;
@@ -37,8 +40,11 @@ body.nonindex {
 	background-size: 100%;
 	/*background-attachment: fixed;*/
 	color: var(--text-color);
-	font-family: /*'Elegant Sans Regular'*/, serif;
-	font-size: 1em;/*26px;
+	font-family:
+		/*'Elegant Sans Regular'*/
+		, serif;
+	font-size: 1em;
+	/*26px;
 	/*Aspect technique*/
 	margin: 0px;
 	padding: 0;
@@ -52,7 +58,7 @@ body.nonindex {
 }
 
 
-.smob{
+.smob {
 	display: none;
 }
 
@@ -63,7 +69,12 @@ main {
 	max-width: 1200px;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Dancing Script', cursive;
 	line-height: 1em;
 	margin: 0;
@@ -72,15 +83,24 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (min-width:800px) {
-	h1 {font-size: 4rem;	}
+	h1 {
+		font-size: 4rem;
+	}
 
-	h2 {font-size: 2.7rem;	}
+	h2 {
+		font-size: 2.7rem;
+	}
 
-	h3 {font-size: 2rem;	}
+	h3 {
+		font-size: 2rem;
+	}
 
-	h4 {font-size: 1.7rem;	}
+	h4 {
+		font-size: 1.7rem;
+	}
 
-	h5 {		/*titres de niveau 5*/
+	h5 {
+		/*titres de niveau 5*/
 		font-size: 1.2rem;
 	}
 
@@ -91,17 +111,36 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media screen and (max-width:800px) {
+
 	/*on réduit les marges quand l'écran est tout petit*/
 	main {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	h1 {font-size: 2.5rem;	}
-	h2 {font-size: 1.9rem;	}
-	h3 {font-size: 1.4rem;	}
-	h4 {font-size: 1.1rem;	}
-	h5 {font-size: 0.9rem;	}
-	h6 {font-size: 0.7rem;	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	h2 {
+		font-size: 1.9rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	h4 {
+		font-size: 1.1rem;
+	}
+
+	h5 {
+		font-size: 0.9rem;
+	}
+
+	h6 {
+		font-size: 0.7rem;
+	}
 
 	body {
 		font-size: 1em;
@@ -124,6 +163,7 @@ a {
 	a {
 		text-decoration: none;
 	}
+
 	a:hover:not(.sa) {
 		/*liens hypertextes quand on passe la souris dessus*/
 		text-decoration: underline;

@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*------------------------
+  PIED DE PAGE
+  ------------------*/
+
+footer {
+	/*le bandeau de bas de page*/
+	background-color: var(--third-color);
+	padding: 1rem 50px;
+	/*margin-top: 5rem;*/
+	/*padding-right: calc(4.5rem + 20px);*/
+}
+
+@media screen and (max-width:500px) {
+	/*on réduit les marges quand l'écran est tout petit*/
+	footer {
+		padding-left: 20px;
+	}
+}
+
+footer #piedDePage {
+	/*le pied de page en soit*/
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+footer #footerlogo {
+	/*logo*/
+	height: 16rem;
+	padding: 0;
+	margin: 0;
+}
+
+footer #footertext {
+	/*texte du pied de page*/
+	display: flex;
+	height: min-content;
+	padding: 0;
+}
+
+footer #footertext div {
+	padding: 0 0 0 2rem;
+}
+
+@media screen and (max-width:800px) {
+	footer #piedDePage {
+		align-items: start;
+	}
+	footer #footerlogo {
+		height: 9rem;
+		float: right;
+	}
+	footer #footertext {
+		display: block;
+		float: left;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	footer #footerlogo {
+		display: none;
+	}
+}
+
+footer #footer h2 {
+	white-space: nowrap;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+footer #footer p {
+	line-height: 2.3rem;
+}
+
+footer #footer button svg,
+footer #footer button img {
+	overflow: visible;
+	/*images des réseaux sociaux*/
+	height: 1.5em;
+	width: 1.5em;
+	/*translate: 0 0.4em;*/
+	margin-right: 0.5em;
+}
+
+footer #footer button:hover {
+	filter: brightness(130%);
+	-webkit-filter: brightness(130%);
+}
+
+footer #rs {
+    display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+}

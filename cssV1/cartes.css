@@ -1,0 +1,164 @@
+ /* ------------------------------
+Code CSS pour la page des membres
+---------------------------------*/
+
+.carte .angle{
+	margin: 0.35em -10em 0em 0.35em;
+	width: 3em;
+	float: left;
+}
+
+.carte .angle180{
+	width: 3em;
+	float: right;
+	margin: -1.5em 0.35em 0.35em 0em;
+}
+
+.jeu {
+	/*organisation de la page*/
+	display: grid;
+
+}
+
+.cal {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+	grid-gap: 2rem;
+		grid-auto-flow: dense;
+}
+
+@media screen and (min-width: 1500px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+
+
+@media screen and (max-width: 1500px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr 1fr /*repeat(auto-fill, minmax(300px, 1fr))*/;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+@media screen and (max-width: 900px) and (min-width: 550px) {
+	.jeu {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.jeu {
+		grid-template-columns: 1fr;
+		grid-gap: 2rem;
+		grid-auto-flow: dense;
+	}
+}
+
+.carte,
+a.carte {
+	/*bloccarte(contientphoto+texte)*/
+	/*border: solid;
+	border-width: 1px;*/
+	border-radius: 10px;
+	border-color: var(--text-color-dark);
+	text-align: center;
+	align-items: center;
+	background: var(--box-color);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	transition: all 0.5s ease;
+	max-width: 500px;
+	color: var(--text-color);
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.jeu .carte-haute {
+	grid-row-end: span 2;
+}
+
+img.carte {
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+.carte .image {
+	/*boîte contenant l'image*/
+	width: 100%;
+	overflow: hidden;
+}
+
+.carte .esperluette{
+	width: 10em;
+	object-fit: cover;
+	margin: auto;
+}
+
+.carte p
+{
+    align:justify;
+		margin: 0em 0.5em 0em 0.5em;
+		font-size:0.9em;
+}
+
+.carte img {
+	/*l'image en elle-même*/
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+.carte .menbre img{
+	/*image ronde*/
+	border-radius: 50%;
+}
+
+/*.carte .texte {
+	/*boîte contenant le texte*/
+/*	margin: 1rem;
+	margin-top: 0.5rem;
+}*/
+
+@media (hover: hover) {
+	.carte:hover {
+		/*bloc carte quand on passe la souris*/
+		background: var(--box-color-lighter);
+		box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+	}
+	.carte:not(.wohover):not(.image .photoMenbre):hover img {
+		/*quand on passe la souris sur l'image*/
+		/*transform: scale(1.1);*/
+		filter: brightness(1.1);
+		/*-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);*/
+		-webkit-filter: brightness(1.1);
+	}
+	.dark .carte:not(.wohover):hover img {
+		/*quand on passe la souris sur l'image*/
+		transform: scale(1.1);
+		filter: brightness(1.1) grayscale(0.2);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-webkit-filter: brightness(1.1) grayscale(0.2);
+	}
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+        <title>Allôs</title>
+
+		<link rel="shortcut icon" href="../data/favicons/favicon_16.ico" type="image/x-icon" />
+		<link rel="icon" href="/data/favicons/favicon_32.png" sizes="32x32" />
+		<link rel="icon" href="/data/favicons/favicon_48.png" sizes="48x48" />
+		<link rel="icon" href="/data/favicons/favicon_96.png" sizes="96x96" />
+		<link rel="icon" href="/data/favicons/favicon_144.png" sizes="144x144" />
+    </head>
+
+    <body>
+		<header>
+		<!-- en-tête de page
+			class="active" pour metre en surbrillance pour indique dans quel menus on est
+			class="quick-access" pour mettre à droit du menus
+			liée au css topnav
+		-->
+
+			<nav>
+					<!--Version portable-->
+				<details class="boxnav" >
+					<summary>
+						<div class="icon"><img src="../data/icons/menu.svg" class="svg" class="svg" alt="Menu"></div>
+						<div class="iconmenu"><img src="../data/logo_rond.png" alt="" id="titre" ></div>
+						<span>Les Aristocrabes</span>
+					</summary>
+					<p> <br> <br> </p>
+					<a href="home.html" class="mobile">
+						<span>Accueil</span>
+					</a>
+					<a href="programme.html" class="mobile">
+						<span>Programme</span>
+					</a>
+					<a href="menbre.html" class="mobile">
+						<span>Membres</span>
+					</a>
+					<a href="campagnes.html" class="mobile">
+						<span>Campagnes</span>
+					</a>
+					<a href="allos.html" class="mobile active">
+						<span>Allos</span>
+					</a>
+					<a href="http://rplacearistocrabe.fr/ace" class="mobile">
+						<span>r/ place</span>
+					</a><br>
+					<div style="display:flex">
+						<a href="../en/home.html" class="mobile"  title="English"><span>English</span></a>
+						<a> </a>
+						<a href="tel:+33620939644" style="float: right" class="mobile" title="Appelez-nous !" >
+							<div class="icon"><img src="../data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
+						</a>
+					</div>
+
+				</details>
+
+					<!--Version ordi-->
+				<a href="home.html" id="titre">
+					<div class="icon"><img src="../data/logo_rond.png" alt=""></div>
+					<span>Les Aristocrabes</span>
+				</a>
+				<a href="programme.html">
+					<span>Programme</span>
+				</a>
+				<a href="menbre.html"><span>Membres</span></a>
+				<a href="campagnes.html"><span>Campagnes</span></a>
+				<a href="allos.html" class="active" ><span>Allos</span></a>
+				<a href="http://rplacearistocrabe.fr/ace"><span>r/ place</span></a>
+
+					<!--accses rapide-->
+
+				<a href="../en/allos.html" class="quick-access"  title="English"><span>English</span></a>
+				<a href="tel:+33620939644" class="quick-access" title="Appelez-nous !"> <!--A trouver pour l'integre differement-->
+
+					<div class="icon"><img src="../data/icons/tel.svg" class="svg" alt="Appelez-nous !"></div>
+				</a>
+			</nav>
+		</header>
+		<style>
+			a.gros-bouton {
+				float:right;
+				margin-top:1.5rem;
+			}
+			button.gros-bouton {
+				font-size:1.5rem;
+				height:2em;
+				padding:0.5em;
+				margin:auto 0;
+			}
+			@media screen and (max-width: 500px) {
+				button.gros-bouton {
+					font-size: 1.1rem;
+				}
+			}
+		</style>
+		<main>
+			<div style="display:flow-root;">
+				<h1 style="float:left;">Allô !</h1>
+				<a class="hidden gros-bouton" href="tel:+33620939644">
+					<button class="gros-bouton">Appelle-nous au +33620939644 !</button>
+				</a>
+			</div>
+			<p>A votre service pour vous proposer votre meilleur semaine de l'année ! </p>
+			<div class="jeu">
+				<!--div class="carte">
+					<div class="image">
+						<img src="..\data\programme\allos.png" alt="Image du Allô">
+					</div>
+				</div-->
+				<div class="carte">
+					<div class="image scalemin">
+						<img src="..\data\programme\Allo.png" alt="Allôs">
+					</div>
+					<br>
+					<div class="texte Allos">
+						<img src="..\data\icons\angle.png" alt="#" class="angle">
+						<br>
+						<h3>Allôs Bouffe</h3>
+						<img src="..\data\icons\esp.png" alt="-------" width="500" height="75%" class="esperluette">
+						<h4>Boissons</h4>
+						<p>Soft drinks : cola, ice tea,...</p>
+						<h4>Surimi</h4>
+						<p><br></p>
+						<h4>Puis, Selon les arrivages</h4>
+						<p><a href="https://www.instagram.com/lesaristocrabes/?hl=fr">(On vous tient au courant en story insta)</a></p>
+						<h6>Petit dej</h6>
+						<h6>Menu du jour</h6>
+						<h6>Goûter du jour</h6>
+						<img src="..\data\icons\angle180.png" alt="#" class="angle180">
+						<br><br>
+					</div>
+
+				</div>
+				<div class="carte">
+					<div class="image scalemin">
+						<img src="..\data\programme\Allo2.png" alt="Allôs">
+					</div>
+					<br>
+					<div class="texte Allos">
+						<img src="..\data\icons\angle.png" alt="#" class="angle">
+						<br>
+						<h3>Allôs Services</h3>
+						<img src="..\data\icons\esp.png" alt="-------" width="500" height="75%" class="esperluette">
+						<h4>Coiffeur</h4>
+						<h4>Barbier / moustache</h4>
+						<h4>On te raccompagne dans la nuit</h4>
+						<h4>Anniversaire<h4>
+						<h4>Zizou</h4>
+						<h4>Paparazzi</h4>
+						<img src="..\data\icons\angle180.png" alt="#" class="angle180">
+						<br><br>
+					</div>
+				</div>
+				<div class="carte">
+					<div class="image scalemin">
+						<img src="..\data\programme\Allo3.png" alt="Allôs">
+					</div>
+					<br>
+					<div class="texte Allos">
+						<img src="..\data\icons\angle.png" alt="#" class="angle">
+						<br>
+						<h3>Allôs Bien-Être</h3>
+						<img src="..\data\icons\esp.png" alt="-------" width="500" height="75%" class="esperluette">
+						<h4>Footing</h4>
+						<h4>Randonnée</h4>
+						<h4>Sport de raquette</h4>
+						<h4>Tea Time<h4>
+						<h4>Motivation !</h4>
+						<!--h4><br><h4>
+							<h4><br><h4>
+						<h4><br><h4-->
+						<img src="..\data\icons\angle180.png" alt="#" class="angle180">
+						<br><br>
+					</div>
+				</div>
+				<div class="carte">
+					<div class="image scalemin">
+						<img src="..\data\programme\Allo4.png" alt="Allôs">
+					</div>
+					<br>
+					<div class="texte">
+						<img src="..\data\icons\angle.png" alt="#" class="angle">
+						<br>
+						<h3>Allôs Fête</h3>
+						<img src="..\data\icons\esp.png" alt="-------" width="500" height="75%" class="esperluette">
+						<h4>Soirée alcool</h4>
+						<h4>Jeux de société</h4>
+					  <h4>Jeu Vidéo</h4>
+						<h4>Nerf</h4>
+						<h4>Crab maga</h4>
+						<h4>Pétanque</h4>
+						<h4>Surprise !</h4>
+						<img src="..\data\icons\angle180.png" alt="#" class="angle180">
+						<br><br>
+					</div>
+				</div>
+				<!--div class="carte wohover">
+					<div class="image">
+						<img src="..\data\programme\allos.png" alt="Image du Allô">
+					</div>
+				</div-->
+			</div>
+
+
+		</main>
+		<footer>
+			<div id="piedDePage">
+				<img id="footerlogo" src="../data/logo_rond.png" alt="Logo de Cerf'Lock Holmes" loading="lazy"/>
+				<div id="footertext">
+					<div id="footer">
+						<h2 class="titlefont">Aristocrabes</h2>
+						<p>©Les Ratbattes 2022 <br/>
+						<a href="legal.html">Mentions légales</a></p>
+						<!--<p><i>Texte </i></p>-->
+					</div>
+					<div id="footer">
+					  <h2>Nos Réseaux !</h2>
+						<br>
+						<!--probleme de casse coller-->
+					  <div id="rs">
+							<p><a href="https://www.facebook.com/profile.php?id=100088349800030" target="_blank" class="hidden" title="Facebook">
+								<button style="--first-color:#1877f2;border:20px;">
+									<img src="../data/rs/facebook.svg" class="svg" />
+									Facebook
+								</button>
+							</a></p>
+							<p><a href="https://www.youtube.com/playlist?list=PL-l4H-_V8QeGsmaDJ-mEbN6Hk9vvwDkU3" target="_blank" class="hidden" title="Youtube">
+								<button style="--first-color: #e20d0d;border:20px;">
+									<img src="../data/rs/youtube.svg" class="svg" />
+									Youtube
+								</button>
+							</a></p>
+							<p><a href="https://www.instagram.com/lesaristocrabes/?hl=fr" target="_blank" class="hidden" title="instagram">
+								<button style="--first-color:#ef0075;border:20px;">
+									<!--img src="..\data\icons\anglePetit.png" alt="#" class="anglePetit"-->
+									<img src="../data/rs/instagram.svg" class="svg" />
+									Instagram
+									<!--img src="..\data\icons\anglePetit180.png" alt="#" class="anglePetit180"-->
+								</button>
+
+							</a></p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		</body>
+</html>

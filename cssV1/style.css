@@ -1,0 +1,97 @@
+@import url("topnav.css");
+@import url("main.css");
+@import url("footer.css");
+@import url("cartes.css");
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@300;600&family=Grenze:wght@300;600&family=Merriweather:wght@400;700&display=swap');
+/* -------------
+   LES COULEURS :
+ ----------------*/
+
+
+/* Utilisation des couleurs :
+	--bg-color: 			couleur d'arrière-plan de la page
+	--first-color: 			couleur principale (barre de titre, bouton, surlignage)
+	--first-color-lighter: 	couleur principale éclairée (pour passage de la souris dessus)
+	--first-color-to-text: 	couleur principale adapatée au mode jour/nuit (liens)
+	--second-color:			couleur secondaire (celle de la page ouverte par exemple)
+	--second-color-lighter: couleur secondaire éclairée
+	--third-color: 			couleur tertiaire (pied de page)
+	--text-color:			couleur du texte par défaut
+	--text-color-opposite: 	couleur du texte complémentaire de celle par défaut
+	--text-color-light:		couleur du texte blanche
+	--text-color-dark: 		couleur du texte noire
+	--box-color: 			couleur de fond des boîtes/pop-up (eg les membres)
+	--box-color-lighter:	couleur de fond des boîtes éclairée
+*/
+
+html {
+	/*couleurs claires*/
+	--bg-color: #9FB6DF; /*Bleu/violet*/
+	--gray: #CECECE;
+	--first-color: #CD362D; /*Rouge*/
+	--first-color-lighter: #E53B32; /*Rouge Clair*/
+	--first-color-to-text: #7F0000; /*couleur lien*/
+	--second-color: #A7001E; /*Rouge sombre*/
+	--second-color-lighter: #CC0025; /*Rouge secondaire*/
+	--third-color: #CD362D;
+	--text-color: #000000; /*blanc*/
+	--text-color-opposite: #f2f2f2;
+	--text-color-light: #f2f2f2;
+	--text-color-dark: #101010;
+	--box-color: rgb(255,255,255,0.4); /*#9FB6DF;*/
+	--box-color-lighter: #9FB6DF;
+}
+
+html.dark {
+	/*couleurs sombres*/
+	--bg-color: #161b2c;
+	--gray: #454a4d;
+	--first-color: #094992;
+	--first-color-lighter: rgb(12, 91, 182);
+	--first-color-to-text: #6fb2ff;
+	--second-color: #ca9834;
+	--second-color-lighter: #e2aa3b;
+	--third-color: #0f2d50;
+	--text-color: #E0E0E0;
+	--text-color-opposite: #101010;
+	--text-color-light: #FAFAFA;
+	--text-color-dark: #000000;
+	--box-color: #0b2d53;
+	--box-color-lighter: #0d3766;
+}
+
+.dark img {
+	filter: grayscale(0.2);
+	-webkit-filter: grayscale(0.2);
+}
+
+.box {
+	/*border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	border-color: var(--text-color-dark);*/
+	background: var(--box-color);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	padding: 1rem;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+}
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'Elegant Sans Regular';
+    src: url('Elegant Sans Regular.ttf') format('truetype'),
+}
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'Elegant Sans Semibold';
+    src: url('Elegant Sans Semibold.ttf') format('truetype'),
+}
+
+@font-face { /* Définition d'une nouvelle police nommée CAC Champagne */
+    font-family: 'Kashina';
+    src: url('Kashina.ttf') format('truetype'),
+}
